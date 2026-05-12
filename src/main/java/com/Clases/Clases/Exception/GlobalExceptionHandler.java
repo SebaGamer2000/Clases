@@ -1,4 +1,4 @@
-package com.Clases.Clases;
+package com.Clases.Clases.Exception;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
