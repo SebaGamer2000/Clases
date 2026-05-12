@@ -34,6 +34,19 @@ public class ClaseController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<ClaseResponseDTO> actualizar
+    public ResponseEntity<ClaseResponseDTO> actualizar(
+            @PathVariable Long id, @Valid @RequestBody ClaseRequestDTO dto
+    ){
+        return claseService.actualizar(id, dto).map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
+    }
+
+    @DeleteMapping("{id}")
+    public ResponseEntity<Void> eliminar(@PathVariable Long id){
+        if (claseService.findById(id).isEmpty()){
+            return ResponseEntity.notFound().build();
+        }
+        claseService.eliminar(id);
+        return ResponseEntity.noContent().build();
+    }
 
 }
