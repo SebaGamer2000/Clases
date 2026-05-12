@@ -1,4 +1,7 @@
 package com.Clases.Clases.Repository;
 
-public interface ClaseRepository {
+import com.Clases.Clases.Clases.Clase;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ClaseRepository extends JpaRepository<Clase, Long> {
 }

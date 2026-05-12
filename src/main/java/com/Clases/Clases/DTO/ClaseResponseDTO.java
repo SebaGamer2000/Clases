@@ -1,28 +1,16 @@
-package com.Clases.Clases.Clases;
+package com.Clases.Clases.DTO;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Table (name = "Clases")
 
-public class Clase {
-    @Id
-    @GeneratedValue
+public class ClaseResponseDTO {
     private Long id;
-
-    @Column(nullable = false)
     private String nombreClase;
-
-    @Column(nullable = false)
     private String descripcion;
-
-    @Column
     private Integer cupos;
-
 }
