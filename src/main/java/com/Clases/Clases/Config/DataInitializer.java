@@ -22,7 +22,7 @@ public class DataInitializer implements CommandLineRunner {
 
         log.info("No hay datos guardados, creando datos");
 
-        claseRepository.save(
+      /*  claseRepository.save(
                 new Clase(null, "Yoga", "Clase de yoga", 25)
         );
         claseRepository.save(
@@ -30,6 +30,6 @@ public class DataInitializer implements CommandLineRunner {
         );
         claseRepository.save(
                 new Clase(null, "Zumba", "Sesiones de Zumba", 40)
-        );
+        );*/
     }
 }
