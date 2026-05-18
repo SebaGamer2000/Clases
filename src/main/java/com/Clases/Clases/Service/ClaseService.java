@@ -27,14 +27,15 @@ public class ClaseService {
                 clase.getCupos()
         );
     }
+    //Para listar todas las clases
     public List<ClaseResponseDTO> findAll(){
         return claseRepository.findAll().stream().map(this::maptoDTO).collect(Collectors.toList());
     }
-
+    //Para encontrar clase por ID
     public Optional<ClaseResponseDTO> findById(Long id){
         return claseRepository.findById(id).map(this::maptoDTO);
     }
-
+    //Para crear y guardar clases
     public ClaseResponseDTO guardar(ClaseRequestDTO dto){
         log.info("Guardando clase...");
         Clase clase = new Clase(
@@ -46,7 +47,7 @@ public class ClaseService {
         log.info("Clase guardada");
         return maptoDTO(claseRepository.save(clase));
     }
-
+    //Para actualizar clase usando su ID
     public Optional<ClaseResponseDTO> actualizar(Long id, ClaseRequestDTO dto){
         log.info("Actualizando clase...");
         return claseRepository.findById(id).map(existente ->{
@@ -57,6 +58,7 @@ public class ClaseService {
             return maptoDTO(claseRepository.save(existente));
         });
     }
+    //Para eliminar clase usando su ID
     public void eliminar(Long id){claseRepository.deleteById(id);}{
         log.info("Clase eliminada");
     }
