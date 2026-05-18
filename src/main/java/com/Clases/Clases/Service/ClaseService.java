@@ -5,6 +5,8 @@ import com.Clases.Clases.DTO.ClaseRequestDTO;
 import com.Clases.Clases.DTO.ClaseResponseDTO;
 import com.Clases.Clases.Repository.ClaseRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ClaseService {
     private final ClaseRepository claseRepository;
+    private static final Logger log = LoggerFactory.getLogger(ClaseService.class);
 
     private ClaseResponseDTO maptoDTO(Clase clase){
         return new ClaseResponseDTO(
@@ -33,22 +36,28 @@ public class ClaseService {
     }
 
     public ClaseResponseDTO guardar(ClaseRequestDTO dto){
+        log.info("Guardando clase...");
         Clase clase = new Clase(
                 null,
                 dto.getNombreClase(),
                 dto.getDescripcion(),
                 dto.getCupos()
         );
+        log.info("Clase guardada");
         return maptoDTO(claseRepository.save(clase));
     }
 
     public Optional<ClaseResponseDTO> actualizar(Long id, ClaseRequestDTO dto){
+        log.info("Actualizando clase...");
         return claseRepository.findById(id).map(existente ->{
             existente.setNombreClase(dto.getNombreClase());
             existente.setDescripcion(dto.getDescripcion());
             existente.setCupos(dto.getCupos());
+            log.info("Clase actualizada");
             return maptoDTO(claseRepository.save(existente));
         });
     }
-    public void eliminar(Long id){claseRepository.deleteById(id);}
+    public void eliminar(Long id){claseRepository.deleteById(id);}{
+        log.info("Clase eliminada");
+    }
 }

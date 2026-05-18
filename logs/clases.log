@@ -1,0 +1,92 @@
+2026-05-17T19:48:01.156-04:00  INFO 20452 --- [Clases] [main] com.Clases.Clases.ClasesApplication      : Starting ClasesApplication using Java 21.0.10 with PID 20452 (C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\Clases\target\classes started by sebit in C:\Users\sebit\Desktop\Universidad\Programacion\Fullstack I\Clases)
+2026-05-17T19:48:01.164-04:00 DEBUG 20452 --- [Clases] [main] com.Clases.Clases.ClasesApplication      : Running with Spring Boot v4.0.6, Spring v7.0.7
+2026-05-17T19:48:01.167-04:00  INFO 20452 --- [Clases] [main] com.Clases.Clases.ClasesApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-05-17T19:48:04.812-04:00  INFO 20452 --- [Clases] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-17T19:48:05.669-04:00  INFO 20452 --- [Clases] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 757 ms. Found 1 JPA repository interface.
+2026-05-17T19:48:06.706-04:00  INFO 20452 --- [Clases] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fde49229-fd24-32d3-be4d-3fba1de4b29c
+2026-05-17T19:48:08.645-04:00  INFO 20452 --- [Clases] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8084 (http)
+2026-05-17T19:48:08.704-04:00  INFO 20452 --- [Clases] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-17T19:48:08.706-04:00  INFO 20452 --- [Clases] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-17T19:48:09.067-04:00  INFO 20452 --- [Clases] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 7710 ms
+2026-05-17T19:48:09.871-04:00  INFO 20452 --- [Clases] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-17T19:48:10.101-04:00  INFO 20452 --- [Clases] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-05-17T19:48:11.622-04:00  INFO 20452 --- [Clases] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-17T19:48:11.709-04:00  INFO 20452 --- [Clases] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-17T19:48:12.217-04:00  INFO 20452 --- [Clases] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65b5b5ed
+2026-05-17T19:48:12.230-04:00  INFO 20452 --- [Clases] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-17T19:48:12.425-04:00  WARN 20452 --- [Clases] [main] org.hibernate.orm.core                   : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly.The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2026-05-17T19:48:12.438-04:00  WARN 20452 --- [Clases] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-17T19:48:12.531-04:00  INFO 20452 --- [Clases] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/clases_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 5.5.5
+	Default catalog/schema: clases_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-17T19:48:16.315-04:00  INFO 20452 --- [Clases] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-17T19:48:16.529-04:00  INFO 20452 --- [Clases] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T19:48:16.772-04:00  INFO 20452 --- [Clases] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-17T19:48:17.112-04:00  INFO 20452 --- [Clases] [main] com.Clases.Clases.Service.ClaseService   : Clase eliminada
+2026-05-17T19:48:17.249-04:00  WARN 20452 --- [Clases] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-17T19:48:19.350-04:00  INFO 20452 --- [Clases] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-05-17T19:48:19.538-04:00  WARN 20452 --- [Clases] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-05-17T19:48:19.624-04:00  INFO 20452 --- [Clases] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-05-17T19:48:19.718-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-05-17T19:48:19.734-04:00  INFO 20452 --- [Clases] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:48:19.769-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-05-17T19:48:19.771-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-05-17T19:48:19.772-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-05-17T19:48:19.772-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-05-17T19:48:19.772-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-05-17T19:48:19.772-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-05-17T19:48:19.772-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-05-17T19:48:21.063-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-05-17T19:48:21.092-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-05-17T19:48:21.097-04:00  INFO 20452 --- [Clases] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-05-17T19:48:21.135-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1779061701101 with initial instances count: 2
+2026-05-17T19:48:21.147-04:00  INFO 20452 --- [Clases] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLASES with eureka with status UP
+2026-05-17T19:48:21.149-04:00  INFO 20452 --- [Clases] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779061701149, current=UP, previous=STARTING]
+2026-05-17T19:48:21.156-04:00  INFO 20452 --- [Clases] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLASES/LAPTOP-TLGIUAT7:Clases:8084: registering service...
+2026-05-17T19:48:21.329-04:00  INFO 20452 --- [Clases] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLASES/LAPTOP-TLGIUAT7:Clases:8084 - registration status: 204
+2026-05-17T19:48:21.379-04:00  INFO 20452 --- [Clases] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8084 (http) with context path '/'
+2026-05-17T19:48:21.382-04:00  INFO 20452 --- [Clases] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8084
+2026-05-17T19:48:21.413-04:00  INFO 20452 --- [Clases] [main] com.Clases.Clases.ClasesApplication      : Started ClasesApplication in 22.481 seconds (process running for 25.551)
+2026-05-17T19:48:22.650-04:00  INFO 20452 --- [Clases] [main] c.Clases.Clases.Config.DataInitializer   : Datos cargados
+2026-05-17T19:53:20.137-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:57:29.071-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-17T19:57:29.090-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-17T19:57:29.198-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 106 ms
+2026-05-17T19:57:46.040-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-3] com.Clases.Clases.Service.ClaseService   : Guardando clase...
+2026-05-17T19:57:46.041-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-3] com.Clases.Clases.Service.ClaseService   : Clase guardada
+2026-05-17T19:58:20.769-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T19:58:37.744-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-8] com.Clases.Clases.Service.ClaseService   : Actualizando clase...
+2026-05-17T19:58:37.749-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-8] com.Clases.Clases.Service.ClaseService   : Clase actualizada
+2026-05-17T19:58:57.141-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-10] com.Clases.Clases.Service.ClaseService   : Guardando clase...
+2026-05-17T19:58:57.141-04:00  INFO 20452 --- [Clases] [http-nio-8084-exec-10] com.Clases.Clases.Service.ClaseService   : Clase guardada
+2026-05-17T20:03:20.785-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:08:20.821-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:13:20.854-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:18:20.893-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:23:20.927-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:28:20.950-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:33:20.990-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:38:21.015-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:43:21.034-04:00  INFO 20452 --- [Clases] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-05-17T20:44:18.305-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application CLASES with eureka with status DOWN
+2026-05-17T20:44:18.321-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1779065058321, current=DOWN, previous=UP]
+2026-05-17T20:44:18.324-04:00  INFO 20452 --- [Clases] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLASES/LAPTOP-TLGIUAT7:Clases:8084: registering service...
+2026-05-17T20:44:18.481-04:00  INFO 20452 --- [Clases] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLASES/LAPTOP-TLGIUAT7:Clases:8084 - registration status: 204
+2026-05-17T20:44:18.620-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-17T20:44:18.717-04:00  INFO 20452 --- [Clases] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-17T20:44:18.904-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-17T20:44:19.119-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-17T20:44:19.220-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-05-17T20:44:19.240-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-05-17T20:44:22.253-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-05-17T20:44:22.322-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLASES/LAPTOP-TLGIUAT7:Clases:8084 - deregister  status: 200
+2026-05-17T20:44:22.327-04:00  INFO 20452 --- [Clases] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
